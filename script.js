@@ -52,50 +52,6 @@ gsap.to("#page2>h1>span",{
     color:`#fff`
 })
 
-var clutter = "";
-
-document.querySelector("#page3>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`
-
-    document.querySelector("#page3>h1").innerHTML = clutter;
-})
-
-
-gsap.to("#page3>h1>span",{
-    scrollTrigger:{
-        trigger:`#page3>h1>span`,
-        start:`top bottom`,
-        end:`bottom top`,
-        scroller:`#main`,
-        scrub:.5,
-    },
-    stagger:.2,
-    color:`#fff`
-})
-
-var clutter = "";
-
-document.querySelector("#page2>h1").textContent.split("").forEach(function(dets){
-    clutter += `<span>${dets}</span>`
-
-    document.querySelector("#page2>h1").innerHTML = clutter;
-})
-
-
-gsap.to("#page2>h1>span",{
-    scrollTrigger:{
-        trigger:`#page2>h1>span`,
-        start:`top bottom`,
-        end:`bottom top`,
-        scroller:`#main`,
-        scrub:.5,
-    },
-    stagger:.2,
-    color:`#fff`
-})
-
-
-
 
 var clutter = "";
 
@@ -105,19 +61,18 @@ document.querySelector("#page4>h1").textContent.split("").forEach(function(dets)
     document.querySelector("#page4>h1").innerHTML = clutter;
 })
 
+
 gsap.to("#page4>h1>span",{
-  scrollTrigger:{
-      trigger:`#page4>h1>span`,
-      start:`top bottom`,
-      end:`bottom top`,
-      scroller:`#main`,
-      scrub:.5,
-  },
-  stagger:.2,
-  color:`#fff`
+    scrollTrigger:{
+        trigger:`#page4>h1>span`,
+        start:`top bottom`,
+        end:`bottom top`,
+        scroller:`#main`,
+        scrub:.5,
+    },
+    stagger:.2,
+    color:`#fff`
 })
-
-
 
 var clutter = "";
 
@@ -127,24 +82,18 @@ document.querySelector("#page6>h1").textContent.split("").forEach(function(dets)
     document.querySelector("#page6>h1").innerHTML = clutter;
 })
 
+
 gsap.to("#page6>h1>span",{
-  scrollTrigger:{
-      trigger:`#page6>h1>span`,
-      start:`top bottom`,
-      end:`bottom top`,
-      scroller:`#main`,
-      scrub:.5,
-  },
-  stagger:.2,
-  color:`#fff`
+    scrollTrigger:{
+        trigger:`#page6>h1>span`,
+        start:`top bottom`,
+        end:`bottom top`,
+        scroller:`#main`,
+        scrub:.5,
+    },
+    stagger:.2,
+    color:`#fff`
 })
-
-
-
-
-
-
-
 
 gsap.to(".page7-cir",{
   scrollTrigger:{
