@@ -35,42 +35,95 @@
   }
 
   #page1>video{
+    margin-top: 4%;
       height: 100%;
       width: 100%;
       object-fit: cover;
   }
-  #page1>nav{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0px 30px;
-      position: absolute;
-      height: 10vh;
-      width: 100vw;
-  }
-  #page1>nav>img{
-      margin-top: -5px;
-      margin-left: -5px;
-      width: 5%;
-  }
-  .name{
-    height: 100%;
-    width: 60%;
-  }
-  #right-nav>button{
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 50px;
-      backdrop-filter: blur(5px);
-      background: transparent;
-      font-family: 'Jost', sans-serif;
-      font-weight: 400px;
-      font-size: 15px;
-      size: 100px;
-  }
-  #right-nav> i{
-    size: 500px;
-  }
+
+#page1>nav{
+    background: #0d0c0f;
+    width: 100%;
+    height: auto;
+    padding: 10px 3% ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.logo{
+    width: 50px;
+    height: 45px;
+}
+
+.name{
+    width: auto;
+    height: 50px;
+    padding-left: 10px;
+}
+.ri-user-fill{
+    background-color: #e4f4e4;
+    color: #5fcb4b;
+    border-radius: 50%;
+    padding: 10px 10px;
+    font-size: larger;
+}
+.ri-user-fill:hover{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 10px 10px;
+    background-color: #5fcb4b;
+    border: #171616;
+    color: #e4f4e4;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: #3a3838;
+}
+
+nav ul{
+    width: 100%;
+    text-align: right;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li .home{
+    padding: 7px 15px;
+    background-color: #ededed;
+    color: rgb(17, 15, 9);
+    border: #171616;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+nav ul li a{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+nav ul li a:hover{
+    
+    padding: 7px 15px;
+    background-color: #ededed;
+    color: rgb(17, 15, 9);
+    border: #171616;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    
+}
+
   .bottom-page1{
       position: absolute;
       bottom: 5%;
@@ -112,7 +165,7 @@
       padding: 10px 20px;
       border: none;
       border-radius: 50px;
-      background-color: #142533;
+     
       backdrop-filter: blur (5px);
       color: #fed336;
       font-size: 16px;
@@ -142,7 +195,7 @@
       margin-bottom: 3vw;
       font-weight: 100;
       font-size: 2.5vw;
-      color: rgb(236, 179, 35);
+      color: #fed336;
   }
 
   #page2>h1{
@@ -190,11 +243,13 @@
       backdrop-filter: blur(10px);
       font-family: a;
   }
-  #page4>h3{
-      margin-left: 15vw;
-      margin-bottom: 2vw;
-      font-weight: 100;
-      color: #fff;
+  #page4>h2{
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 3vw;
+    font-weight: 100;
+    font-size: 2.5vw;
+    color: #fed336;
+    margin-left: 250px;
   }
   #page4>h1{
       margin-left: 15vw;
@@ -207,7 +262,7 @@
       position: relative;
       height: 100vh;
       width: 100vw;
-      background-color: #fed336;
+      background-color: #141a1e;
   }
   #page5>canvas{
       position: relative;
@@ -221,11 +276,11 @@
       position: relative;
       height: 100vh;
       width: 100vw;
-      background-color: #142533;
+      background-color: #141a1e;
       flex-direction: column;
       font-family: a;
   }
-  #page6>h3{
+  #page6>h2{
       margin-left: 15vw;
       font-weight: 100;
       color: #fff;
@@ -242,7 +297,7 @@
       position: relative;
       height: 100vh;
       width: 100vw;
-      background-color: #142533;
+      background-color: #141a1e;
   }
   #page7>canvas{
       position: relative;
@@ -275,7 +330,7 @@
       position: relative;
       height: 100vh;
       width: 100vw;
-      background-color: #142533;
+      background-color: #0b141c;
   }
   #page8>video{
       height: 100%;
@@ -296,12 +351,20 @@
       font-size: 5vw;
       font-weight: 100;
   }
-  .page8-bottom>button{
+  .page8-bottom>.button>span{
       padding: 20px 30px;
       border-radius: 50px;
       border: none;
       background-color: #fff;
       color: #0a3cce;
+      transform: .2s linear;
+  }
+  .page8-bottom>.button>span:hover{
+    transform: translateX(5px);
+    transition:.6s ease all ;
+    letter-spacing: 2px;
+    color: aqua;
+    cursor: pointer;
   }
   #page9{
       display: flex;
@@ -338,7 +401,7 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background-image: url(https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg);
+      background-image: url(https://images.pexels.com/photos/586030/pexels-photo-586030.jpeg?auto=compress&cs=tinysrgb&w=600);
       background-size: cover;
       left: 5%;
   }
@@ -408,6 +471,13 @@
       width: 100%;
       object-fit: cover;
   }
+  .left11>a>img:hover{
+    transform: scale(1);
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+  }
   .right11{
       padding-top: 5vw;
       color: #000;
@@ -441,8 +511,8 @@
       font-size: 5vw;
       font-weight: 100;
   }
-  .page12-inner>p{
-      font-size: 1.3vw;
+  .page12-inner>h2{
+      font-size: 2vw;
   }
   
   
@@ -505,7 +575,7 @@
   .center14{
       height: 0%;
       width: 100%;
-      background-color: #0a3cce;
+      background-color: #e6b436;
       position: absolute;
       left: 50%;
       top: 50%;
